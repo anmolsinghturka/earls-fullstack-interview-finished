@@ -16,11 +16,13 @@ There are two parts to this assignment:
 3. Using the function `hacker_news` found in `views.py`, create a view accessible by users via this url [localhost:8080/latest_hacker_news](localhost:8080/latest_hacker_news). The view should return the following results:
     - Displays the title, author's name, and date of publication of the latest 5 articles from the `stories` table . The dataset can be obtained from the public dataset `hacker_news` (`bigquery-public-data.hacker_news.stories`).
     
+OUTPUT
 ![Sales ERD](Part_1_latest_hacker_news_output.png)
 
 4. Using the function `github` found in `views.py`, create a view accessible by users via this url [localhost:8080/most_commits](localhost:8080/most_commits). The view should return the following results:
     - Displays the individuals with the most commits from the `sample_commits` table in 2016. Display the name and number of commits sorted from most to least commits. The dataset can be obtained from the public dataset `github_repos` (`bigquery-public-data.github_repos.sample_commits`).
-    
+
+OUTPUT
 ![Sales ERD](Part_1_most_commits_output.png)
 
 5. If applicable, compile a README for the project.
