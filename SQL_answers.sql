@@ -1,7 +1,7 @@
 -- Question #1
 -- Based on the ERD provided, write a SQL query to find the number of occurrences that an ingredient named “Lobster Ravioli” was sold at each store. Rank the stores by dishes sold with the highest occurrence first.
 
-SELECT store.store_id, COUNT(sales.ingredient_id) AS num_of_occurences FROM store,sales,ingredient WHERE sales.store_id = store.store_id AND sales.ingredient_id = ingredient.ingredient_id AND ingredient.ingredient_name ='Lobster Ravioli' GROUP BY sales.store_id ORDER BY COUNT(sales.ingredient_id) DESC; 
+SELECT store.store_id, COUNT(sales.ingredient_id) AS num_of_occurences FROM store, sales, ingredient WHERE sales.store_id = store.store_id AND sales.ingredient_id = ingredient.ingredient_id AND ingredient.ingredient_name ='Lobster Ravioli' GROUP BY sales.store_id ORDER BY COUNT(sales.ingredient_id) DESC; 
 
 -- Question #2
 -- Revise the query from Question #1 to limit the dataset queried between April 1st, 2021 to May 1st, 2021. Return only the stores that have sold more than 45 Lobster Ravioli dishes.
