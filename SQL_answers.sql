@@ -22,4 +22,4 @@ CREATE TABLE Sales (
     FOREIGN KEY (ingredient_id) REFERENCES ingredient(ingredient_id)
 );
 
-{# All the tables are already normalized no additions are needed. #}
+{# All the tables are already normalized so no additions are needed. #}
